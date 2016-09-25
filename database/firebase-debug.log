@@ -1,0 +1,17 @@
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /Users/evosus/.nvm/versions/node/v5.11.1/bin/node /Users/evosus/.nvm/versions/node/v5.11.1/bin/firebase serve
+[debug] CLI Version:  3.0.7
+[debug] Platform:     darwin
+[debug] Node Version: v5.11.1
+[debug] Time:         Sun Sep 25 2016 09:27:17 GMT-0700 (PDT)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[info] Starting Firebase development server...
+[info] 
+[info] Project Directory: /Users/evosus/code/src/github.com/evosus/rd/auth-apps/database
+[warn] ⚠  Port 5000 is not available. Trying another port...
+[warn] ⚠  Port 5001 is not available. Trying another port...
+[warn] ⚠  Port 5002 is not available. Trying another port...
+[info] Public Directory: ./
+[info] 
+[info] Server listening at: http://localhost:5003
