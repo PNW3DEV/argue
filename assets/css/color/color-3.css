@@ -1,0 +1,96 @@
+.logo a {
+    color: #BAAD7C;
+}
+.section0 {
+    background-image: url(../../images/testimonial-bg.jpg);
+}
+.section0 .content .sub-logo,
+.section4 h3,
+.testimonials-box h4 i,
+.close-sub span:nth-child(4),
+#page-testimonials h3 {
+    color: #BAAD7C;
+}
+.store-btn.app {
+    background-color: #BAAD7C;
+}
+.title:before{
+	background-color:#BAAD7C;
+}
+.close-sub {
+    border-color: #BAAD7C;
+}
+.down .mouse span,
+.down .mouse {
+    border: 2px solid #BAAD7C;
+}
+.down .mouse span {
+    background: #BAAD7C;
+}
+.link--faded:hover, .link--faded:focus{
+    background: #BAAD7C;
+}
+.subtitle_left {
+    border-left: 4px solid #BAAD7C;
+}
+.onepage-pagination li a.active:before,
+.onepage-pagination li a:hover:before {
+    border-color: #BAAD7C !important;
+}
+.onepage-pagination li a.active,
+.onepage-pagination li a:hover {
+    background-color: #BAAD7C !important;
+    border-color: #BAAD7C !important;
+}
+/*====== Header Menu =======*/
+.menu-button::before, .menu-button::after, .menu-button span,.Features-Summary table tbody tr td:last-of-type,.client-block{
+	background: #BAAD7C !important;
+}
+.nav > li.active > a,
+.nav > li > a:hover,
+.nav > li > a:focus {
+    color: #BAAD7C;
+    border-color: #BAAD7C;
+}
+.social-icons ul li a:hover i,
+.social-icons ul li a:focus i,
+.close-bar,
+.owl-theme .owl-controls .owl-nav div {
+    background-color: #BAAD7C;
+}
+/*====== Primary Button ======*/
+
+.btn-primary {
+    background-color: #BAAD7C;
+    border-color: #BAAD7C;
+}
+
+.bx-wrapper .bx-controls-direction a {
+    background-color: rgba(90, 200, 251, 0.5);
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+    background: #BAAD7C !important;
+    border-color: #BAAD7C !important;
+}
+.amazing-feature-text .fa,
+.sub-logo,
+.Features-Summary table tbody tr td .child-iconWrap i,
+.inner-box i{
+    color: #BAAD7C;
+}
+.Features-Summary table thead tr th:last-of-type{
+	background: #BAAD7C;
+}
+
+.team-position p ,.subtitle_bolder{
+	color:#BAAD7C !important;
+}
+
+.btn-primary:hover, .btn-primary:focus,.btn-primary:active{
+	background: #fff !important;
+    color: #BAAD7C !important;
+    border-color: #BAAD7C !important;
+    outline: none !important;
+    box-shadow: none;
+}

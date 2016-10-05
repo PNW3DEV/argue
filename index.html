@@ -1,356 +1,675 @@
-<!doctype html>
-<html lang="en">
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Argue Socal Application">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Argue Social App</title>
-  <link rel="shortcut icon" href="/images/favicon.png">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Love To Argue - Social App</title>
+    <!-- HTML5 Shim and Respond.js IE9 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-  <!-- Disable tap highlight on IE -->
-  <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Argue Social App Landing Page by Pacific North Web Development">
+    <meta name="keywords" content="phoenix, Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app, onepage, technology">
+    <meta name="author" content="Pacific North Web Development">
+    <meta name="Resource-type" content="Document" />
 
-  <!-- Web Application Manifest -->
-  <link rel="manifest" href="/manifest.json">
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" href="assets/images/logo.png">
 
-  <!-- Add to home screen for Chrome on Android -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="application-name" content="Argue Social App">
-  <meta name="theme-color" content="#303F9F">
-  <link rel="icon" sizes="192x192" href="/images/touch/touch-icon-192x192.png">
-  <link rel="icon" sizes="128x128" href="/images/touch/touch-icon-128x128.png">
+    <!-- Font css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
 
-  <!-- Add to home screen for Safari on iOS -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="Argue Social App">
-  <link rel="apple-touch-icon" href="/images/touch/touch-icon-180x180.png">
-  <link rel="apple-touch-icon-precomposed" href="/images/touch/touch-icon-180x180.png">
-  <meta name="apple-mobile-web-app-status-bar-style" content="#303F9F">
+    <!-- Bootstrap-->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
 
-  <!-- Tile icon for Win8 -->
-  <meta name="msapplication-TileImage" content="/images/touch/touch-icon-144x144.png">
-  <meta name="msapplication-TileColor" content="#3372DF">
-  <meta name="msapplication-navbutton-color" content="#303F9F">
+    <!-- Owl-carousal CSS-->
+    <link rel="stylesheet" href="assets/css/owl-carousel.min.css" type="text/css" />
 
-  <!-- Material Design Lite  -->
-  <link rel="stylesheet" href="/bower_components/material-design-lite/material.min.css">
-  <script defer src="/bower_components/material-design-lite/material.min.js"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Light-Box CSS -->
+    <link rel="stylesheet" href="assets/css/simplelightbox.min.css" type="text/css" />
 
-  <!-- Firebase UI Auth -->
-  <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/live/0.5/firebase-ui-auth.css" />
+    <!-- Magnific popup -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" type="text/css" />
 
-  <!-- Styling -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,300">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amaranth:700">
-  <link rel="stylesheet" href="/styles/main.css">
+    <!-- Loader css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/loader.css">
+
+    <!-- Phoenix custom css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-custom.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/stacknav-component.css" />
+
+    <!-- Responsive css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
+
+    <!-- Color css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/color/color-1.css"  id="color" />
+
+    <!-- Color variant - Uncomment single one-->
+
+    <!--
+    <link rel="stylesheet" type="text/css" href="assets/css/color/color-2.css"  id="color" />
+    <link rel="stylesheet" type="text/css" href="assets/css/color/color-3.css"  id="color" />
+    <link rel="stylesheet" type="text/css" href="assets/css/color/color-4.css"  id="color" />
+    <link rel="stylesheet" type="text/css" href="assets/css/color/color-5.css"  id="color" />
+    <link rel="stylesheet" type="text/css" href="assets/css/color/color-6.css"  id="color" />
+    <link rel="stylesheet" type="text/css" href="assets/css/color/color-7.css"  id="color" />-->
+
 </head>
 <body>
-
-<!-- Theatre mode viewer -->
-<div class="fp-theatre"><img class="fp-fullpic"></div>
-
-<!-- Splash screen -->
-<section id="page-splash">
-  <h3 class="fp-logo"><i class="material-icons">photo</i> Argue</h3>
-  <div class="fp-caption">The meanest way to share your opinions</div>
-  <div class="fp-signed-out-only fp-initially-hidden">
-    <div id="firebaseui-auth-container" class="fp-signed-out-only fp-initially-hidden"></div>
-    <a class="fp-skip" href="/feed">skip sign in</a>
-  </div>
-</section>
-
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-
-  <!-- Header section containing logo and menu -->
-  <header class="fp-header mdl-layout__header mdl-color-text--white mdl-color--light-blue-700">
-    <div class="mdl-layout__header-row fp-titlebar">
-
-      <!-- Logo -->
-      <h3 class="fp-logo"><a href="/feed"><i class="material-icons">photo</i> Argue</a></h3>
-      <div class="mdl-layout-spacer"></div>
-
-      <!-- Search bar -->
-      <div class="fp-searchcontainer mdl-textfield mdl-js-textfield mdl-textfield--expandable">
-        <label class="mdl-button mdl-js-button mdl-button--icon" for="searchQuery">
-          <i class="material-icons">search</i>
-        </label>
-        <div class="mdl-textfield__expandable-holder">
-          <input class="mdl-textfield__input" type="text" id="searchQuery">
-          <label class="mdl-textfield__label" for="searchQuery">Enter your query...</label>
-        </div>
-        <div id="fp-searchResults" class="mdl-card mdl-shadow--2dp"></div>
-      </div>
-
-      <!-- Singed-in User Info -->
-      <div class="mdl-cell--hide-phone">
-        <a href="/"><button class="fp-sign-in-button fp-signed-out-only mdl-button mdl-js-button mdl-js-ripple-effect"><i class="material-icons">account_circle</i> Sign in</button></a>
-        <div class="fp-signed-in-user-container mdl-cell--hide-phone fp-signed-in-only">
-          <a class="fp-usernamelink mdl-button mdl-js-button">
-            <div class="fp-avatar"></div>
-            <div class="fp-username mdl-color-text--white"></div>
-          </a>
-        </div>
-      </div>
-
-      <!-- Drop Down Menu -->
-      <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-cell--hide-phone" id="fp-menu">
-        <i class="material-icons">more_vert</i>
-      </button>
-      <ul class="fp-menu-list mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="fp-menu">
-        <a href="/about">
-          <li class="mdl-menu__item"><i class="material-icons">perm_contact_calendar</i> About - Help - Contact</li>
-        </a>
-        <li class="fp-sign-out mdl-menu__item fp-signed-in-only"><i class="material-icons">exit_to_app</i> Sign out</li>
-      </ul>
+<div id="loader_top" class="loader_top">
+    <div class="wrap">
+        <div class="loader"></div>
+        <div class="loaderbefore"></div>
+        <div class="circular"></div>
+        <div class="circular another"></div>
+        <div class="loader_text">Argue</div>
     </div>
-
-    <!-- Navigation Bar -->
-    <div class="fp-tab mdl-layout__header-row mdl-cell--hide-phone mdl-color--light-blue-600">
-      <div class="mdl-tab">
-        <a href="/" id="fp-menu-home" class="mdl-layout__tab fp-signed-in-only is-active mdl-button mdl-js-button mdl-js-ripple-effect"><i class="material-icons">home</i> Home</a>
-        <a href="/feed" id="fp-menu-feed" class="mdl-layout__tab mdl-button mdl-js-button mdl-js-ripple-effect"><i class="material-icons">trending_up</i> Feed</a>
-        <input id="fp-mediacapture" type="file" accept="image/*;capture=camera">
-        <button class="fp-signed-in-only mdl-button mdl-js-button mdl-button--fab mdl-cell--hide-tablet mdl-color--amber-400 mdl-shadow--4dp mdl-js-ripple-effect" id="add">
-          <i class="material-icons">file_upload</i>
-        </button>
-      </div>
-    </div>
-    <button class="fp-signed-in-only mdl-cell--hide-desktop mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-color--amber-400 mdl-shadow--4dp" id="add-floating">
-      <i class="material-icons">photo_camera</i>
-    </button>
-  </header>
-
-  <!-- Drawer menu -->
-  <div class="mdl-cell--hide-desktop mdl-cell--hide-tablet mdl-layout__drawer">
-    <a href="/" class="fp-signed-out-only"><button class="fp-sign-in-button mdl-button mdl-js-button mdl-js-ripple-effect"><i class="material-icons">account_circle</i> Sign in</button></a>
-    <div class="fp-signed-in-user-container mdl-color--light-blue-700 fp-signed-in-only">
-      <a class="fp-usernamelink">
-        <div class="fp-avatar"></div>
-        <div class="fp-username mdl-color-text--white"></div>
-      </a>
-    </div>
-    <nav class="mdl-navigation">
-      <a class="mdl-navigation__link is-active fp-signed-in-only" href="/"><i class="material-icons">home</i> Home</a>
-      <a class="mdl-navigation__link" href="/feed"><i class="material-icons">trending_up</i> Feed</a>
-      <hr />
-      <a class="mdl-navigation__link" href="/about"><i class="material-icons">perm_contact_calendar</i> About - Help - Contact</a>
-      <hr class="fp-signed-in-only"/>
-      <a class="fp-sign-out mdl-navigation__link fp-signed-in-only"><i class="material-icons">exit_to_app</i> Sign Out</a>
-    </nav>
-  </div>
-
-  <main class="mdl-layout__content mdl-color--grey-100">
-
-    <!-- Show a feed of posts -->
-    <section id="page-feed" class="mdl-grid fp-content" style="display: none;">
-      <div class="fp-new-posts-button">
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--amber-400">
-          Show new posts...
-        </button>
-      </div>
-      <div class="fp-image-container mdl-cell mdl-cell--12-col mdl-grid">
-        <div class="fp-no-posts fp-help mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet
-                    mdl-cell--8-col-desktop mdl-grid mdl-grid--no-spacing">
-           <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-             <i class="fp-info material-icons">help</i>
-             <div>
-               <p>Start following people to see their posts!</p>
-               <p>
-                 Use the <strong><i class="material-icons">search</i> search bar</strong> to find people you know and have
-                 a look at the <a href="/feed"><i class="material-icons">trending_up</i> feed</a> to discover interesting people.
-               </p>
-               <p>Then <i class="material-icons">favorite</i> like and comment their posts!</p>
-               </div>
-           </div>
-        </div>
-      </div>
-      <div class="fp-next-page-button">
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--fab">
-          <i class="material-icons">expand_more</i>
-        </button>
-      </div>
-    </section>
-
-    <!-- Show a single post with comments -->
-    <section id="page-post" class="mdl-grid fp-content" style="display: none;">
-      <div class="fp-image-container mdl-cell mdl-cell--12-col mdl-grid"></div>
-    </section>
-
-    <!-- About & Contact page -->
-    <section id="page-about" class="mdl-grid fp-content" style="display: none;">
-      <div class="fp-help mdl-card mdl-shadow--2dp mdl-cell
-                  mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--8-col-desktop">
-        <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-          <i class="fp-info material-icons">info</i>
-          <div>
-            <p>Friendly Pix is a photo sharing app showcasing the use of the <a href="https://firebase.google.com">Firebase Platform</a>.</p>
-          </div>
-        </div>
-      </div>
-      <div class="fp-help mdl-card mdl-shadow--2dp mdl-cell
-                  mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--8-col-desktop">
-        <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-          <i class="fp-info material-icons">help</i>
-          <div>
-            <p>Start following people to see their posts in your <a href="/"><i class="material-icons">home</i>home</a>!</p>
-            <p>
-              Use the <strong><i class="material-icons">search</i>search bar</strong> to find people you know and have
-              a look at the <a href="/feed"><i class="material-icons">trending_up</i>feed</a> to discover interesting people.
-            </p>
-            <p>Then <i class="material-icons">favorite</i>like and comment their posts!</p>
-            <p>
-              Share your pics with your friends using the <i class="material-icons">file_upload</i>or <i class="material-icons">photo_camera</i>buttons.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="fp-help mdl-card mdl-shadow--2dp mdl-cell
-                  mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--8-col-desktop">
-        <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-          <i class="fp-info material-icons">contacts</i>
-          <div>
-            <p>Feel free to file issues on our <a href="https://github.com/firebase/friendlypix">GitHub repo</a>.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- User Profile page -->
-    <section id="page-user-info" class="mdl-grid fp-content" style="display: none;">
-      <div class="fp-user-container mdl-shadow--2dp mdl-cell mdl-cell--12-col">
-        <div class="fp-user-avatar"></div>
-        <div class="fp-name-follow-container mdl-cell mdl-cell--5-col">
-          <div class="fp-user-username"></div>
-          <div class="fp-signed-in-only">
-            <label class="fp-follow mdl-switch mdl-js-switch mdl-js-ripple-effect" for="follow">
-              <input type="checkbox" id="follow" class="mdl-switch__input" value="true">
-              <span class="mdl-switch__label">Follow</span>
-            </label>
-          </div>
-          <div class="fp-user-detail-container">
-            <div class="fp-user-detail"><span class="fp-user-nbposts">0</span> posts</div>
-            <div class="fp-user-detail"><span class="fp-user-nbfollowers">0</span> followers</div>
-            <div class="fp-user-detail fp-user-nbfollowing-container"><span class="fp-user-nbfollowing">0</span> following</div>
-          </div>
-        </div>
-      </div>
-      <div class="fp-user-following mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col">
-        <button class="fp-close-following  mdl-button mdl-js-button mdl-button--raised mdl-button--fab">
-          <i class="material-icons">expand_less</i>
-        </button>
-      </div>
-      <div class="fp-image-container mdl-cell mdl-cell--12-col mdl-grid">
-        <div class="fp-no-posts mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-desktop mdl-grid mdl-grid--no-spacing">
-          <div class="mdl-card mdl-shadow--2dp mdl-cell
-                  mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--8-col-desktop">
-            No posts yet.
-          </div>
-        </div>
-      </div>
-      <div class="fp-next-page-button">
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--fab">
-          <i class="material-icons">expand_more</i>
-        </button>
-      </div>
-    </section>
-
-    <!-- Post new pic page -->
-    <section id="page-add" class="mdl-grid fp-content" style="display: none;">
-      <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-grid mdl-grid--no-spacing">
-        <div class="fp-addcontainer mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-desktop">
-          <div class="fp-overlay">
-            <i class="material-icons">hourglass_full</i>
-          </div>
-          <img id="newPictureContainer" src="">
-          <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-            <form id="uploadPicForm" action="#">
-              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <input class="mdl-textfield__input" type="text" id="imageCaptionInput">
-                <label class="mdl-textfield__label" for="imageCaptionInput">Image caption...</label>
-              </div>
-              <br />
-              <button type="submit" class="fp-upload mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--amber-400">
-                Upload this pic!
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Toast -->
-    <div aria-live="assertive" aria-atomic="true" aria-relevant="text" class="mdl-snackbar mdl-js-snackbar">
-      <div class="mdl-snackbar__text"></div>
-      <button type="button" class="mdl-snackbar__action"></button>
-    </div>
-  </main>
 </div>
 
-<!-- Page.js -->
-<script src="/bower_components/page/page.js"></script>
+<!-- [S] Header for responsive menu -->
+<div class="header">
+    <div class="header-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 pull-right">
+                    <!-- [S] social icons -->
+                    <div class="social-icons clear">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                    <!-- [E] social icons -->
+                </div>
+                <div class="col-md-10">
+                    <nav class="navbar">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="active"><a href="index.html">HOME</a></li>
+                                <li><a href="features.html">Argue PRO</a></li>
+                                <li><a href="contact.html">CONTACT US</a></li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="logo">
+            <a href="#" title="Argue App landing page">Argue</a>
+            <!--<img src="assets/images/logo.png" alt="Phoenix app landing page"/>-->
+        </div>
+    </div>
+</div>
+<!-- [E] Header -->
 
-<!-- jQuery -->
-<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<!-- navigation -->
+<nav class="pages-nav">
+    <ul class="nav nav-pills">
+        <li data-toggle="pill" class="pages-nav__item active"><a class="link link--page" href="#page-home">Home</a></li>
+        <li data-toggle="pill" class="pages-nav__item"><a class="link link--page" href="#page-about">About</a></li>
+        <li data-toggle="pill" class="pages-nav__item"><a class="link link--page" href="#page-features">Features</a></li>
+        <li data-toggle="pill" class="pages-nav__item"><a class="link link--page" href="#page-screenshorts">Screenshorts</a></li>
+        <li data-toggle="pill" class="pages-nav__item"><a class="link link--page" href="#page-testimonials">Testimonials</a></li>
+        <li data-toggle="pill" class="pages-nav__item"><a class="link link--page" href="#page-team">Team</a></li>
+        <li data-toggle="pill" class="pages-nav__item"><a class="link link--page" href="#page-subscribe">Subscribe</a></li>
+        <li data-toggle="pill" class="pages-nav__item"><a class="link link--page" href="#page-download">Download</a></li>
+        <li data-toggle="pill" class="pages-nav__item"><a class="link link--page" href="#">Demo</a></li>
+    </ul>
+    <div class="pages-nav__item pages-nav__item--small"><a class="link link--faded" href="features.html">argue PRO</a></div>
+    <div class="pages-nav__item pages-nav__item--small"><a class="link link--faded" href="contact.html">Contact</a></div>
+    <div class="pages-nav__item pages-nav__item--social">
+        <div class="social-icons clear">
+            <ul>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- /navigation-->
 
-<!-- Latinize -->
-<script src="/bower_components/latinize/latinize.js"></script>
+<!-- Main Div -->
+<div class="pages-stack main">
+    <!-- Home page -->
+    <section class="page home-background-images home_ph" id="page-home">
+        <div class="bg-layer"></div>
+        <div class="intro home valign-wrapper ">
+            <div class="container home_ph_container">
+                <div class="row valign-wrapper">
+                    <div class="col-sm-6 col-xs-12 home_ph_txt">
+                        <div class="content">
+                            <h1>
+                                Argue
+                            </h1>
+                            <p>www.lovetoargue.com
+                                <br />
+                                <div>
+                                    <a href="/index-index.html">Go To WebApp</a>
+                                </div>
+                            </p>
+                            <p>lovetoargue2016@gmail.com</p>
+                            <div class="play-apps-box">
+                                <a href="#">
+                                    <img class="mr15" src="assets/images/apple-store.png" alt="" />
+                                </a>
+                                <a href="#">
+                                    <img src="assets/images/android-store.png" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12 text-center pull-right home_ph_img ">
+                        <div class="phone-box images-container">
+                            <!-- <img class="top" src="assets/images/mockups/home-iphone-1.png" alt="" /> -->
+                            <img class="top" src="assets/images/IMG_6410_iphone6plus_spacegrey_portrait.png" alt="" />
+                            <img class="home_ph_2 hidden-xs hidden-sm" src="assets/images/IMG_6408_htc-onea9-white-portrait 2.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Home page -->
 
-<!-- SweetAlert -->
-<script src="/bower_components/sweetalert/dist/sweetalert.min.js"></script>
-<link rel="stylesheet" type="text/css" href="/bower_components/sweetalert/dist/sweetalert.css">
+    <!-- Magical feature -->
+    <section class="page" id="page-about">
+        <div class="intro">
+            <div class="container ">
+                <h2 class="title">About magical features
+                </h2>
+                <div class="row valign-wrapper">
+                    <div class="col-md-6 col-sm-6 col-xs-12 text-center hidden-xs hidden-sm">
+                        <div id="video">
+                            <img src="assets/images/mockups/iphone_feature.png" alt="Video-Image">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12 about">
+                        <h3 class="subtitle"><span class="subtitle_left">Extensive </span> <span class="subtitle_bolder">New Features</span> LIST</h3>
+                        <!-- <p>The whole new premium look for your app showcase landing page with amazing features which blow your mind completely. argue app landing page come with 3 multi variant demos.</p> -->
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <ul>
+                                    <li class="amazing-feature-text">
+                                        <i class="fa fa-check icon-color"></i><p>Multi variant demos</p>
+                                    </li>
+                                    <li class="amazing-feature-text">
+                                        <i class="fa fa-check icon-color"></i><p>Suits for all devices</p>
+                                    </li>
+                                    <li class="amazing-feature-text">
+                                        <i class="fa fa-check icon-color"></i><p>Pro features page</p>
+                                    </li>
+                                    <li class="amazing-feature-text">
+                                        <i class="fa fa-check icon-color"></i><p>Complete needed sections</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul>
+                                    <li class="amazing-feature-text">
+                                        <i class="fa fa-check icon-color"></i><p>Attractive graphics</p>
+                                    </li>
+                                    <li class="amazing-feature-text">
+                                        <i class="fa fa-check icon-color"></i><p>Mailchimp ready</p>
+                                    </li>
+                                    <li class="amazing-feature-text">
+                                        <i class="fa fa-check icon-color"></i><p>Contact form with send mail</p>
+                                    </li>
+                                    <li class="amazing-feature-text">
+                                        <i class="fa fa-check icon-color"></i><p>Multi colors</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-12">
+                                <button class="btn btn-primary">EXPLORE MORE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Magical feature-->
 
-<!-- Firebase -->
-    <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
-    <script>
-          // Initialize Firebase
-          var config = {
-            apiKey: "AIzaSyAcVAAsE3X-796keovXnq2PS_bj1r7NDfs",
-            authDomain: "argue-a0460.firebaseapp.com",
-            databaseURL: "https://argue-a0460.firebaseio.com",
-            storageBucket: "argue-a0460.appspot.com",
-            messagingSenderId: "704885937070"
-          };
-          firebase.initializeApp(config);
-    </script>
+    <!--List features-->
+    <section class="page" id="page-features">
+        <div class="intro images-container features valign-wrapper">
+            <div class="container">
+                <div class="row">
+                    <h2 class="title">Features
+                    </h2>
+                    <div class="valign-wrapper">
+                        <div class="col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2 text-center hidden-sm hidden-xs">
+                            <div class="phone-box" style="overflow: hidden;">
+                                <div class="mid-image">
+                                    <img class="highlight-left third" src="assets/images/light.png" height="192" width="48" alt="" /> <img class="highlight-right" src="assets/images/light.png" height="192" width="48" alt="" /> <img id="features" class="iphone-feature-img" src="assets/images/mockups/iphone_pro.png" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="listing-box right">
+                                <ul>
+                                    <li><i class="fa fa-desktop features-icon features-icon-color1"></i>
+                                        <h3>Responsive design</h3>
+                                        <p>Your project looks great on any device. Content can be easily read and a user understands freely.</p>
+                                    </li>
 
-<!-- Firebase UI for Auth -->
-    <script src="https://www.gstatic.com/firebasejs/ui/live/0.5/firebase-ui-auth.js"></script>
-    <script type="text/javascript">
-      // FirebaseUI config.
-      var uiConfig = {
-        'signInFlow': 'popup',
-        'signInOptions': [
-          firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-          firebase.auth.FacebookAuthProvider.PROVIDER_ID
-        ]
-      };
-      var firebaseUi = new firebaseui.auth.AuthUI(firebase.auth());
-    </script>
+                                    <li><i class="fa fa-adjust features-icon features-icon-color2"></i>
+                                        <h3>Color options</h3>
 
-<!-- Friendly Pix ES5 scripts -->
-<!-- <script src="/lib/utils.js"></script>
-<script src="/lib/firebase.js"></script>
-<script src="/lib/auth.js"></script>
-<script src="/lib/search.js"></script>
-<script src="/lib/uploader.js"></script>
-<script src="/lib/userpage.js"></script>
-<script src="/lib/post.js"></script>
-<script src="/lib/feed.js"></script>
-<script src="/lib/routing.js"></script> -->
+                                        <p>The set of ready made CSS files with different color schemes will help you in quick landing’s adaptation according to the devices.
+                                        </p>
+                                    </li>
 
-<!-- Friendly Pix ES2015 scripts -->
-<!-- Uncomment and replace scripts above to serve ES2015 scripts directly -->
-<script src="/scripts/utils.js"></script>
-<script src="/scripts/firebase.js"></script>
-<script src="/scripts/auth.js"></script>
-<script src="/scripts/search.js"></script>
-<script src="/scripts/uploader.js"></script>
-<script src="/scripts/userpage.js"></script>
-<script src="/scripts/post.js"></script>
-<script src="/scripts/feed.js"></script>
-<script src="/scripts/routing.js"></script>
+                                    <li><i class="fa fa-file-text-o features-icon features-icon-color3"></i>
+                                        <h3>Documentation</h3>
+
+                                        <p>The detailed documentation helps you for your entire project.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="listing-box right">
+                                <ul>
+                                    <li class="mobile-features-li">
+                                        <i class="fa fa-file features-icon features-icon-color4"></i>
+                                        <h3>PSD is included</h3>
+                                        <p>The graphic source file in PSD format is included in the archive. You can modify it as you like. Enjoy with it.</p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-align-justify features-icon features-icon-color5"></i>
+                                        <h3>Multiple demos</h3>
+                                        <p>Script along with 3 different versions . Choose your version and play with it.Your project looks great on any device.</p>
+                                    </li>
+                                    <li><i class="fa fa-support features-icon features-icon-color6"></i>
+                                        <h3>Dedicated support</h3>
+                                        <p>Dedicated support provide by our team with low turnaround time.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <h4 class="more_feature_txt">Want to see Pro Features?</h4>
+                        <a class="btn btn-primary" href="#">Pro features</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End List Features-->
+
+    <!--Screenshot-->
+    <section class="page" id="page-screenshorts">
+        <div class="intro valign-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <h2 class="title">Screenshots
+                    </h2>
+                    <div id="screenshots-owl" class="main-item-list text-center gallery">
+                        <div>
+                            <a class="example-image-link" href="assets/images/screenshots/zoom/1-zoom.jpg" data-lightbox="example-set">
+                                <img class="img img-responsive" src="assets/images/screenshots/1.jpg" alt="Screenshot-1">
+                            </a>
+                        </div>
+                        <div>
+                            <a class="example-image-link" href="assets/images/screenshots/zoom/2-zoom.jpg" data-lightbox="example-set">
+                                <img class="img img-responsive" src="assets/images/screenshots/2.jpg" alt="Screenshot-2">
+                            </a>
+                        </div>
+                        <div>
+                            <a class="example-image-link" href="assets/images/screenshots/zoom/3-zoom.jpg" data-lightbox="example-set">
+                                <img class="img img-responsive" src="assets/images/screenshots/3.jpg" alt="Screenshot-3">
+                            </a>
+                        </div>
+                        <div>
+                            <a class="example-image-link" href="assets/images/screenshots/zoom/4-zoom.jpg" data-lightbox="example-set">
+                                <img class="img img-responsive" src="assets/images/screenshots/4.jpg" alt="Screenshot-4">
+                            </a>
+                        </div>
+                        <div>
+                            <a class="example-image-link" href="assets/images/screenshots/zoom/5-zoom.jpg" data-lightbox="example-set">
+                                <img class="img img-responsive" src="assets/images/screenshots/5.jpg" alt="Screenshot-1">
+                            </a>
+                        </div>
+                        <div>
+                            <a class="example-image-link" href="assets/images/screenshots/zoom/6-zoom.jpg" data-lightbox="example-set">
+                                <img class="img img-responsive" src="assets/images/screenshots/6.jpg" alt="Screenshot-2">
+                            </a>
+                        </div>
+                        <div>
+                            <a class="example-image-link" href="assets/images/screenshots/zoom/3-zoom.jpg" data-lightbox="example-set">
+                                <img class="img img-responsive" src="assets/images/screenshots/3.jpg" alt="Screenshot-3">
+                            </a>
+                        </div>
+                        <div>
+                            <a class="example-image-link" href="assets/images/screenshots/zoom/4-zoom.jpg" data-lightbox="example-set">
+                                <img class="img img-responsive" src="assets/images/screenshots/4.jpg" alt="Screenshot-4">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Screenshots-->
+
+    <!--Testimonials-->
+    <section class="page testimonial-background" id="page-testimonials">
+        <div class="intro valign-wrapper">
+            <div class="container">
+                <div class="row">
+                    <h2 class="title c_white">What people say</h2>
+                    <div id="testimonial-owl" class="testimonial-owl col-sm-12 text-center">
+                        <div>
+                            <h3>Argue Social App</h3>
+                            <div class="testimonials-box">
+                                <p></p>
+                                <h4>
+                                    <i>- by </i>Pacific North Web Development
+                                </h4>
+                            </div>
+                        </div>
+                        <!-- End of Testimonial-1 -->
+                        <!-- Start Testimonial-2 -->
+                        <div>
+                            <h3>Crystal clear design with retina ready display looks</h3>
+                            <div class="testimonials-box">
+                                <p>Best app ever seen in current market. The extensive design with clear look n feel</p>
+                                <h4>
+                                    <i>- by </i>Mack
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Testimonial-->
+
+    <!--Team-->
+    <section class="page" id="page-team">
+        <div class="intro valign-wrapper">
+            <div class="container">
+                <div class="row text-center">
+                    <h2 class="title">Our Team
+                    </h2>
+                    <div class="col-sm-12 mb30">
+                        <div class="col-md-3 col-sm-6 team-block">
+                            <img class="img img-responsive" src="assets/images/team/team-1.png" alt="team1" />
+                            <div class="team-desc">
+                                <div class="team-name">
+                                    <h4>Prince Charlie</h4>
+                                </div>
+                                <div class="team-position">
+                                    <p>Lead Developer</p>
+                                </div>
+                                <ul class="team-socials">
+                                    <li class="fb"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="twt"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="skype"><a href="#"><i class="fa fa-skype"></i></a></li>
+                                    <li class="l_in"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 team-block">
+                            <img class="img img-responsive" src="assets/images/team/team-2.png" alt="team2" />
+                            <div class="team-desc">
+                                <div class="team-name">
+                                    <h4>Hemen Parker</h4>
+                                </div>
+                                <div class="team-position">
+                                    <p>Lead Marketer</p>
+                                </div>
+                                <ul class="team-socials">
+                                    <li class="fb"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="twt"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="skype"><a href="#"><i class="fa fa-skype"></i></a></li>
+                                    <li class="l_in"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 team-block">
+                            <img class="img img-responsive" src="assets/images/team/team-3.png" alt="team3" />
+                            <div class="team-desc">
+                                <div class="team-name">
+                                    <h4>Peter Doe</h4>
+                                </div>
+                                <div class="team-position">
+                                    <p>Head Accountant</p>
+                                </div>
+                                <ul class="team-socials">
+                                    <li class="fb"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="twt"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="skype"><a href="#"><i class="fa fa-skype"></i></a></li>
+                                    <li class="l_in"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 team-block">
+                            <img class="img img-responsive" src="assets/images/team/team-4.png" alt="team4" />
+                            <div class="team-desc">
+                                <div class="team-name">
+                                    <h4>Luke Doe</h4>
+                                </div>
+                                <div class="team-position">
+                                    <p>Graphic Designer</p>
+                                </div>
+                                <ul class="team-socials">
+                                    <li class="fb"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="twt"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="skype"><a href="#"><i class="fa fa-skype"></i></a></li>
+                                    <li class="l_in"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Team-->
+
+    <!--Subscribe-->
+    <section class="page subscribe-back-img valign-wrapper" id="page-subscribe">
+        <div class="intro container">
+            <div class="row">
+                <h2 class="title">Love us ?</h2>
+                <div class="valign-wrapper">
+                    <div class="col-sm-6 col-xs-12 text-center hidden-xs hidden-sm">
+                        <img class="img img-responsive suscribe-mail-img" src="assets/images/mail.png" alt="Subscribe Mail">
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="subscribe-text">
+                            <h3 class="mb30 subtitle">
+                                <span class="subtitle_left">Simple to </span> <span class="subtitle_bolder">Subscribe</span> Mailchimp ready
+                            </h3>
+                            <p>Auto add subscriber to your mailing list in mailchimp account is now easy with argue app landing page</p>
+                        </div>
+                        <div class="subscribe-box">
+                            <form method="post">
+                                <input type="email" class="form-control" id="subscriber_email" placeholder="Email" required="required">
+                                <input type="button" id="subscribe-btn" class="btn btn-primary subscribe-btn" value="SUBSCRIBE">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Subscribe-->
+
+    <!--Download-->
+    <section class="page" id="page-download">
+        <div class="intro download valign-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2 class="title">Download argue for free
+                        </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <div class="play-apps-box">
+                            <a href="#">
+                                <img class="mr15" src="assets/images/apple-store.png" alt="" />
+                            </a>
+                            <a href="#">
+                                <img src="assets/images/android-store.png" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 text-center images-container">
+                        <ul class="img-block clear">
+                            <li><img class="front" src="assets/images/mockups/download-iphone-gold.png" alt="" /></li>
+                            <li><img id="download-ph2" class="back" src="assets/images/mockups/download-iphone-silver.png" alt="" /></li>
+                            <li><img class="side" src="assets/images/mockups/download-iphone-black.png"  alt="" /></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- [S] footer -->
+            <footer class="footer text-center">
+                <p>
+                    Stunning argue app landip page. Designed by <a href="http://phoenixcoded.com" target="_blank">arguecoded</a>.Follow us on Envato. Click <a href="http://codecanyon.net/user/phoenixcoded" target="_blank">here</a>
+                </p>
+            </footer>
+            <!-- [E] footer -->
+        </div>
+    </section>
+    <!--End Download-->
+</div>
+<!--End Main Div-->
+
+<!-- Warning Section Starts -->
+<!-- Older IE warning message -->
+<!--[if lt IE 9]>
+<div class="ie-warning">
+    <h1>Warning!!</h1>
+    <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
+    <div class="iew-container">
+        <ul class="iew-download">
+            <li>
+                <a href="http://www.google.com/chrome/">
+                    <img src="assets/images/browsers/chrome.png" alt="">
+                    <div>Chrome</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.mozilla.org/en-US/firefox/new/">
+                    <img src="assets/images/browsers/firefox.png" alt="">
+                    <div>Firefox</div>
+                </a>
+            </li>
+            <li>
+                <a href="http://www.opera.com">
+                    <img src="assets/images/browsers/opera.png" alt="">
+                    <div>Opera</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.apple.com/safari/">
+                    <img src="assets/images/browsers/safari.png" alt="">
+                    <div>Safari</div>
+                </a>
+            </li>
+            <li>
+                <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                    <img src="assets/images/browsers/ie.png" alt="">
+                    <div>IE (9 & above)</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <p>Sorry for the inconvenience!</p>
+</div>-->
+<!--[endif]-->
+<!-- Warning Section Ends -->
+<!-- /pages-stack -->
+<button class="menu-button"><span>Menu</span></button>
+
+<!-- jquery-2.2.3.min.js-->
+<script src="assets/js/jquery.2.2.3.min.js"></script>
+
+<!-- bootstrap.min js -->
+<script src="assets/js/bootstrap.min.js"></script>
+
+<!-- Modernizr js -->
+<script src="assets/js/modernizr-custom.js"></script>
+
+<!-- Owl-carousal js -->
+<script src="assets/js/owl.carousel.min.js" ></script>
+
+<!-- Magnific Pop Up  -->
+<script type="text/javascript" src="assets/js/jquery.magnific-popup.min.js"></script>
+
+<!-- Light-Box js -->
+<script src="assets/js/simple-lightbox.min.js" type="text/javascript"></script>
+
+<!-- Twitter js -->
+<script src="assets/js/tweetie.min.js" type="text/javascript"></script>
+
+<!-- Script js -->
+<script src="assets/js/stacknav-classie.js"></script>
+<script src="assets/js/stacknav-main.js"></script>
+<script src="assets/js/script.js"></script>
+<script type="text/javascript">
+    $(function() {
+        var $window = $(window);
+        var h=$('html');
+        var header=$('.header');
+        $window.resize(function resize() {
+            if ($window.width() <= 1100) {
+                $("section").removeAttr("style");
+                header.removeClass('navbar-none');
+                $('.pages-nav').addClass('pages-nav-none').removeClass('pages-nav');
+                $('.menu-button').addClass('menu-button-none').removeClass('menu-button');
+                return h.removeClass('js csstransitions');
+            }
+            h.addClass('js csstransitions');
+            header.addClass('navbar-none');
+            $('.pages-nav-none').addClass('pages-nav').removeClass('pages-nav-none');
+            $('.menu-button-none').addClass('menu-button').removeClass('menu-button-none');
+        }).trigger('resize');
+    });
+</script>
+<script src="assets/js/color.js" type="text/javascript"></script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-84679460-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
 </body>
 </html>
